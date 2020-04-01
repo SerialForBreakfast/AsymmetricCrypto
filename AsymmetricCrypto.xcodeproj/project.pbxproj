@@ -14,7 +14,19 @@
 		446DFE5C24351B1F00D208CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 446DFE5B24351B1F00D208CA /* Assets.xcassets */; };
 		446DFE5F24351B1F00D208CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446DFE5D24351B1F00D208CA /* LaunchScreen.storyboard */; };
 		446DFE6724351DEB00D208CA /* KeychainFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446DFE6624351DEB00D208CA /* KeychainFacade.swift */; };
+		446DFE6F2435306100D208CA /* AsymmetricCryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446DFE6E2435306100D208CA /* AsymmetricCryptoTests.swift */; };
+		446DFE762435317200D208CA /* KeychainFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446DFE6624351DEB00D208CA /* KeychainFacade.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		446DFE712435306100D208CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 446DFE4724351B1500D208CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 446DFE4E24351B1500D208CA;
+			remoteInfo = AsymmetricCrypto;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		446DFE4F24351B1500D208CA /* AsymmetricCrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsymmetricCrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +38,20 @@
 		446DFE5E24351B1F00D208CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		446DFE6024351B1F00D208CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		446DFE6624351DEB00D208CA /* KeychainFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainFacade.swift; sourceTree = "<group>"; };
+		446DFE6C2435306100D208CA /* AsymmetricCryptoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsymmetricCryptoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		446DFE6E2435306100D208CA /* AsymmetricCryptoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsymmetricCryptoTests.swift; sourceTree = "<group>"; };
+		446DFE702435306100D208CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		446DFE4C24351B1500D208CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		446DFE692435306100D208CA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				446DFE5124351B1500D208CA /* AsymmetricCrypto */,
+				446DFE6D2435306100D208CA /* AsymmetricCryptoTests */,
 				446DFE5024351B1500D208CA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				446DFE4F24351B1500D208CA /* AsymmetricCrypto.app */,
+				446DFE6C2435306100D208CA /* AsymmetricCryptoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +92,15 @@
 				446DFE6624351DEB00D208CA /* KeychainFacade.swift */,
 			);
 			path = AsymmetricCrypto;
+			sourceTree = "<group>";
+		};
+		446DFE6D2435306100D208CA /* AsymmetricCryptoTests */ = {
+			isa = PBXGroup;
+			children = (
+				446DFE6E2435306100D208CA /* AsymmetricCryptoTests.swift */,
+				446DFE702435306100D208CA /* Info.plist */,
+			);
+			path = AsymmetricCryptoTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +123,24 @@
 			productReference = 446DFE4F24351B1500D208CA /* AsymmetricCrypto.app */;
 			productType = "com.apple.product-type.application";
 		};
+		446DFE6B2435306100D208CA /* AsymmetricCryptoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 446DFE732435306100D208CA /* Build configuration list for PBXNativeTarget "AsymmetricCryptoTests" */;
+			buildPhases = (
+				446DFE682435306100D208CA /* Sources */,
+				446DFE692435306100D208CA /* Frameworks */,
+				446DFE6A2435306100D208CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				446DFE722435306100D208CA /* PBXTargetDependency */,
+			);
+			name = AsymmetricCryptoTests;
+			productName = AsymmetricCryptoTests;
+			productReference = 446DFE6C2435306100D208CA /* AsymmetricCryptoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -102,6 +153,10 @@
 				TargetAttributes = {
 					446DFE4E24351B1500D208CA = {
 						CreatedOnToolsVersion = 11.4;
+					};
+					446DFE6B2435306100D208CA = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 446DFE4E24351B1500D208CA;
 					};
 				};
 			};
@@ -119,6 +174,7 @@
 			projectRoot = "";
 			targets = (
 				446DFE4E24351B1500D208CA /* AsymmetricCrypto */,
+				446DFE6B2435306100D208CA /* AsymmetricCryptoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +187,13 @@
 				446DFE5F24351B1F00D208CA /* LaunchScreen.storyboard in Resources */,
 				446DFE5C24351B1F00D208CA /* Assets.xcassets in Resources */,
 				446DFE5A24351B1500D208CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		446DFE6A2435306100D208CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +211,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		446DFE682435306100D208CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				446DFE6F2435306100D208CA /* AsymmetricCryptoTests.swift in Sources */,
+				446DFE762435317200D208CA /* KeychainFacade.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		446DFE722435306100D208CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 446DFE4E24351B1500D208CA /* AsymmetricCrypto */;
+			targetProxy = 446DFE712435306100D208CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		446DFE5824351B1500D208CA /* Main.storyboard */ = {
@@ -320,6 +400,46 @@
 			};
 			name = Release;
 		};
+		446DFE742435306100D208CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C52PFKSQPU;
+				INFOPLIST_FILE = AsymmetricCryptoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ShowBlender.AsymmetricCryptoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AsymmetricCrypto.app/AsymmetricCrypto";
+			};
+			name = Debug;
+		};
+		446DFE752435306100D208CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C52PFKSQPU;
+				INFOPLIST_FILE = AsymmetricCryptoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ShowBlender.AsymmetricCryptoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AsymmetricCrypto.app/AsymmetricCrypto";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -337,6 +457,15 @@
 			buildConfigurations = (
 				446DFE6424351B1F00D208CA /* Debug */,
 				446DFE6524351B1F00D208CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		446DFE732435306100D208CA /* Build configuration list for PBXNativeTarget "AsymmetricCryptoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				446DFE742435306100D208CA /* Debug */,
+				446DFE752435306100D208CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
