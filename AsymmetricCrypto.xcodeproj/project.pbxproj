@@ -13,6 +13,7 @@
 		446DFE5A24351B1500D208CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446DFE5824351B1500D208CA /* Main.storyboard */; };
 		446DFE5C24351B1F00D208CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 446DFE5B24351B1F00D208CA /* Assets.xcassets */; };
 		446DFE5F24351B1F00D208CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446DFE5D24351B1F00D208CA /* LaunchScreen.storyboard */; };
+		446DFE6724351DEB00D208CA /* KeychainFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446DFE6624351DEB00D208CA /* KeychainFacade.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		446DFE5B24351B1F00D208CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		446DFE5E24351B1F00D208CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		446DFE6024351B1F00D208CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		446DFE6624351DEB00D208CA /* KeychainFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainFacade.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				446DFE5B24351B1F00D208CA /* Assets.xcassets */,
 				446DFE5D24351B1F00D208CA /* LaunchScreen.storyboard */,
 				446DFE6024351B1F00D208CA /* Info.plist */,
+				446DFE6624351DEB00D208CA /* KeychainFacade.swift */,
 			);
 			path = AsymmetricCrypto;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				446DFE5724351B1500D208CA /* ViewController.swift in Sources */,
 				446DFE5324351B1500D208CA /* AppDelegate.swift in Sources */,
 				446DFE5524351B1500D208CA /* SceneDelegate.swift in Sources */,
+				446DFE6724351DEB00D208CA /* KeychainFacade.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
